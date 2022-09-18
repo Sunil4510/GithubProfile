@@ -143,7 +143,7 @@ const App = () => {
         <Route path="/Profile" element={<Profiles/>}/>
         <Route path="/" element={<Home data={data}/>}/>
       </Routes>
-      {window.location.href!=="http://sunil4510.github.io/Profile" || window.location.href!=="https://sunil4510.github.io/Profile" && (
+      {window.location.href!=="https://sunil4510.github.io/Profile" && (
         <div className="flex items-center justify-center space-x-10 m-10">
         {pageNumber>1&&(<div className={btn}><button onClick={()=>setpageNumber(pageNumber-1)}>Previous</button></div>)}
         {search&&(<div className={btn}><button onClick={()=>setpageNumber(pageNumber+1)}>Next</button></div>)}
